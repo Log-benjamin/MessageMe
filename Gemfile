@@ -26,6 +26,8 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem 'jquery-rails'
+
 gem 'semantic-ui-rails'
 
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
