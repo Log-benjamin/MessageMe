@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/doabit/semantic-ui-sass.git
+  revision: 747ccedca838ae05daca0aec89ea1e8e4c3cfa9a
+  specs:
+    semantic-ui-sass (2.5.0.0)
+      sassc
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -76,6 +83,8 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
+    autoprefixer-rails (10.4.16.0)
+      execjs (~> 2)
     base64 (0.2.0)
     bigdecimal (3.1.6)
     bindex (0.8.1)
@@ -91,6 +100,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    commonjs (0.2.7)
     concurrent-ruby (1.2.3)
     connection_pool (2.4.1)
     crass (1.0.6)
@@ -101,6 +111,9 @@ GEM
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
+    execjs (2.9.1)
+    ffi (1.16.3)
+    ffi (1.16.3-x64-mingw-ucrt)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -116,6 +129,12 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
+    less-rails (4.0.0)
+      actionpack (>= 4)
+      less (~> 2.6.0)
+      sprockets (>= 2)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -142,6 +161,9 @@ GEM
     nio4r (2.7.0)
     nokogiri (1.16.0-x64-mingw-ucrt)
       racc (~> 1.4)
+    nokogiri (1.16.0-x86_64-linux)
+      racc (~> 1.4)
+    pg (1.5.4)
     pg (1.5.4-x64-mingw-ucrt)
     psych (5.0.1)
       stringio
@@ -195,11 +217,16 @@ GEM
     rexml (3.2.6)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     selenium-webdriver (4.17.0)
       base64 (~> 0.2)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    semantic-ui-rails (0.18.0)
+      autoprefixer-rails
+      less-rails
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -236,6 +263,7 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -247,6 +275,8 @@ DEPENDENCIES
   puma (>= 5.0)
   rails (~> 7.1.1)
   selenium-webdriver
+  semantic-ui-rails
+  semantic-ui-sass!
   sprockets-rails
   stimulus-rails
   turbo-rails
