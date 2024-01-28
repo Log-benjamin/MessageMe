@@ -9,7 +9,7 @@
     Account <i class="dropdown icon"></i>
     <div class="menu">
       <% if logged_in? %>
-        <%= link_to "Logout", logout_path, data: { turbo_method: :delete }, class: "item" %>
+        <%= link_to "Log Out", logout_path, class: "item", data: { turbo_method: :delete } %>
       <% else %>
         <%= link_to "Log in", login_path, class: "item" %>
       <% end %>
