@@ -8,3 +8,4 @@ $(function(){
     $(this).closest('.message').transition('fade');
   });
 })
+import "channels"
